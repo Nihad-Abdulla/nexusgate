@@ -23,17 +23,10 @@ export default function Home() {
             <p className="font-arimo text-gray-600 text-lg leading-relaxed mb-8">
               Navigate the complexities of UAE business setup with confidence. We combine local expertise with global standards to deliver seamless corporate solutions.
             </p>
-            <div className="flex gap-4">
-              <div className="flex flex-col">
-                <span className="font-space text-3xl font-bold text-[#0f2a44]">15+</span>
-                <span className="text-sm text-gray-500">Years Experience</span>
-              </div>
-              <div className="w-px h-12 bg-gray-200"></div>
-              <div className="flex flex-col">
-                <span className="font-space text-3xl font-bold text-[#0f2a44]">2k+</span>
-                <span className="text-sm text-gray-500">Happy Clients</span>
-              </div>
-            </div>
+            <p className="font-arimo text-gray-600 text-lg leading-relaxed mb-8">
+              Navigate the complexities of UAE business setup with confidence. We combine local expertise with global standards to deliver seamless corporate solutions.
+            </p>
+            <div className="h-1.5 w-16 bg-primary rounded-full"></div>
           </div>
 
           {/* Right: Image */}
@@ -81,6 +74,76 @@ export default function Home() {
                 <div className="text-4xl mb-6">{feature.icon}</div>
                 <h3 className="font-space text-xl font-bold text-[#0f2a44] mb-4">{feature.title}</h3>
                 <p className="font-arimo text-gray-600 leading-relaxed">{feature.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* NEW: Methodology Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="order-2 lg:order-1">
+              <div className="grid grid-cols-1 gap-8">
+                {[
+                  {
+                    step: "01",
+                    title: "Strategic Advisory",
+                    desc: "We analyze your business goals and recommend the most optimal jurisdiction and legal structure."
+                  },
+                  {
+                    step: "02",
+                    title: "Documentation & Approval",
+                    desc: "Our PRO team handles all legal paperwork, notarization, and government approvals seamlessly."
+                  },
+                  {
+                    step: "03",
+                    title: "Operational Launch",
+                    desc: "From trade licenses to bank accounts and visas, we ensure your business is fully ready to trade."
+                  }
+                ].map((item, i) => (
+                  <div key={i} className="flex gap-6 group">
+                    <div className="font-space text-5xl font-bold text-gray-100 group-hover:text-primary/20 transition-colors">
+                      {item.step}
+                    </div>
+                    <div>
+                      <h3 className="font-space text-xl font-bold text-[#0f2a44] mb-2">{item.title}</h3>
+                      <p className="font-arimo text-gray-600 leading-relaxed">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="order-1 lg:order-2">
+              <span className="font-space font-bold text-xs tracking-[0.2em] text-primary uppercase block mb-4">
+                Our Methodology
+              </span>
+              <h2 className="font-space text-3xl md:text-5xl font-bold text-[#0f2a44] mb-6 leading-tight">
+                A Proven Path to <br /> Your Success.
+              </h2>
+              <p className="font-arimo text-gray-600 text-lg leading-relaxed mb-8">
+                We've refined our process over a decade to eliminate bottlenecks and ensure absolute compliance at every stage of your setup.
+              </p>
+              <div className="h-2 w-20 bg-primary rounded-full"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* NEW: Core Commitment Strip (Replaced Stats) */}
+      <section className="py-20 bg-[#0f2a44]">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { title: "Strategic Precision", desc: "Data-driven insights for optimal setup" },
+              { title: "Absolute Compliance", desc: "Strict adherence to UAE regulatory laws" },
+              { title: "Ethical Standards", desc: "Complete transparency in every transaction" },
+              { title: "Long-term Partnership", desc: "Support that grows with your business" }
+            ].map((pillar, i) => (
+              <div key={i} className="text-center lg:text-left">
+                <div className="font-space text-xl font-bold text-white mb-2">{pillar.title}</div>
+                <div className="font-arimo text-gray-400 text-sm leading-relaxed">{pillar.desc}</div>
               </div>
             ))}
           </div>

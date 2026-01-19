@@ -25,6 +25,21 @@ const faqs: FAQItem[] = [
         answer:
             "The main types of licenses in UAE are: Commercial License (for trading activities), Professional License (for services, professions, and craftsmen), Industrial License (for manufacturing activities), and Tourism License (for tourism-related businesses). The specific license depends on your business activity and jurisdiction.",
     },
+    {
+        question: "Why should I choose NexusGate over other consultants?",
+        answer:
+            "NexusGate stands out because we provide comprehensive end-to-end solutions combining legal expertise with strategic business advisory. Our direct relationships with government departments ensure faster processing, and our fixed-fee model means complete transparency without hidden costs.",
+    },
+    {
+        question: "How long does it typically take to set up a business?",
+        answer:
+            "While it depends on the jurisdiction and license type, most free zone setups can be completed in 3-5 working days. Mainland setups typically take 5-10 working days. We specialize in expedited processing and can often significantly reduce these timelines through our optimized documentation workflow.",
+    },
+    {
+        question: "Do you provide support after the business is incorporated?",
+        answer:
+            "Absolutely. NexusGate is your long-term partner. Beyond incorporation, we provide ongoing support for visa renewals, corporate tax compliance, VAT management, financial bookkeeping, and annual license renewals, ensuring your business remains compliant and operational year-round.",
+    },
 ]
 
 export function FAQSection() {
