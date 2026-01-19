@@ -187,38 +187,58 @@ export default function About() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[
                             {
-                                title: "Corporate Advisory & Structuring",
-                                desc: "We provide the strategic blueprint for your business, managing legal entity selection, licensing, and full corporate setup to ensure a solid foundation in the UAE market."
+                                slug: "corporate-incorporation",
+                                title: "Corporate Incorporation & Licensing",
+                                desc: "We facilitate seamless company formation across UAE Mainland and Free Zones, overseeing the entire lifecycle from initial trade license acquisition to seamless annual renewals."
                             },
                             {
+                                slug: "government-relations",
+                                title: "Government Relations & Regulatory Liaison",
+                                desc: "Our experts manage all essential interactions with authorities and departments, securing the critical approvals required for your business to operate legally."
+                            },
+                            {
+                                slug: "global-mobility",
                                 title: "Global Mobility & Residency Solutions",
-                                desc: "We manage the end-to-end residency lifecycle, specializing in Golden Visas and executive residencies, including all Govt. administration for sponsors & dependents."
+                                desc: "We manage end-to-end residency cycle, specializing in Golden visa and executive residencies including all government administration for both corporate sponsors and dependents."
                             },
                             {
-                                title: "Corporate Banking Support",
-                                desc: "Leveraging our deep market knowledge, we guide you through the complexities of the UAE financial landscape, facilitating corporate bank account opening & institutional requirements."
+                                slug: "taxation-compliance",
+                                title: "Taxation & Statutory Compliance",
+                                desc: "Our team ensures your business adheres to the latest UAE fiscal regulations through expert Tax registration and ongoing compliance management for both VAT and Corporate Tax."
                             },
                             {
-                                title: "Tax Registration & Regulatory Compliance",
-                                desc: "Our experts navigate the local tax environment, managing Corporate Tax & VAT registration, filing, and ongoing compliance to protect your business from regulatory risks."
+                                slug: "financial-management",
+                                title: "Financial Management & Bookkeeping",
+                                desc: "We deliver precise accounting and bookkeeping services that safeguard your financial integrity and ensure your records meet international standards and local regulatory requirements."
                             },
                             {
-                                title: "Strategic Accounting & Bookkeeping",
-                                desc: "We provide meticulous financial oversight, acting as your internal finance team through outsourced bookkeeping and reporting to maintain total transparency."
+                                slug: "banking-support",
+                                title: "Banking & Financial Support",
+                                desc: "We bridge the gap between your business and financial institutions, providing strategic support to streamline the corporate bank account opening process and ongoing banking needs."
                             },
                             {
-                                title: "Branding",
-                                desc: "Strategic positioning within the Dubai business ecosystem to elevate your corporate identity and market presence."
+                                slug: "corporate-branding",
+                                title: "Corporate Branding",
+                                desc: "Beyond administration, we help establish your market presence through professional branding services that build a strong and recognizable identity for your new venture."
                             }
                         ].map((service, i) => (
-                            <div key={i} className="group p-8 bg-white rounded-2xl border border-gray-100 hover:border-primary/20 hover:shadow-xl transition-all duration-300">
-                                <h3 className="font-space text-xl font-bold text-[#0f2a44] mb-4 group-hover:text-primary transition-colors">
-                                    {service.title}
-                                </h3>
-                                <p className="font-arimo text-gray-600 leading-relaxed text-sm">
-                                    {service.desc}
-                                </p>
-                            </div>
+                            <Link
+                                href={`/services/${service.slug}`}
+                                key={i}
+                                className="group p-8 bg-white rounded-2xl border border-gray-100 hover:border-primary/20 hover:shadow-xl transition-all duration-300 flex flex-col h-full"
+                            >
+                                <div className="flex-grow">
+                                    <h3 className="font-space text-xl font-bold text-[#0f2a44] mb-4 group-hover:text-primary transition-colors">
+                                        {service.title}
+                                    </h3>
+                                    <p className="font-arimo text-gray-600 leading-relaxed text-sm">
+                                        {service.desc}
+                                    </p>
+                                </div>
+                                <div className="mt-6 flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all transform translate-x-[-10px] group-hover:translate-x-0">
+                                    View Details <ArrowRight className="w-4 h-4" />
+                                </div>
+                            </Link>
                         ))}
                     </div>
                 </div>
