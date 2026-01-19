@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
 
 const quickLinks = [
@@ -26,12 +27,13 @@ export function Footer() {
                         {/* Company Info */}
                         <div>
                             <div className="flex items-center gap-3 mb-4">
-                                <div className="bg-white/20 p-2 rounded">
-                                    <svg viewBox="0 0 40 40" className="h-8 w-8 text-white" fill="currentColor">
-                                        <path d="M20 5 L35 20 L20 35 L5 20 Z M20 10 L30 20 L20 30 L10 20 Z" />
-                                        <path d="M20 15 L25 20 L20 35 M20 20 L5 20" stroke="currentColor" strokeWidth="2" fill="none" />
-                                    </svg>
-                                </div>
+                                <Image
+                                    src="/LOGO FILES_SECONDARY LOGO-05.svg"
+                                    alt="NexusGate Logo"
+                                    width={32}
+                                    height={32}
+                                    className="h-8 w-8 object-contain brightness-0 invert"
+                                />
                                 <div>
                                     <h2 className="text-lg font-bold">NexusGate</h2>
                                     <p className="text-xs text-white/60 tracking-wider">Consulting</p>

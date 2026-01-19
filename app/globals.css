@@ -4,9 +4,6 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-primary: #35A8AD;
-  --color-secondary: #4cd9a3;
-
   --font-space: "Space Grotesk", sans-serif;
   --font-arimo: "Arimo", sans-serif;
   --font-metropolis: "Metropolis", sans-serif;
@@ -64,7 +61,7 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.64 0.08 186);
+  --primary: #35A8AD;
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
@@ -99,7 +96,7 @@
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.64 0.08 186);
+  --primary: #35A8AD;
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(0.985 0 0);
