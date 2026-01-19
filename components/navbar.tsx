@@ -4,6 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { ChevronDown, Phone, Menu, X } from "lucide-react"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 
@@ -38,12 +39,13 @@ export function Navbar() {
                 <div className="flex justify-between items-center">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2 md:gap-3">
-                        <div className="bg-white/20 p-1.5 md:p-2 rounded-lg">
-                            <svg viewBox="0 0 40 40" className="h-8 w-8 md:h-10 md:w-10 text-white" fill="currentColor">
-                                <path d="M20 5 L35 20 L20 35 L5 20 Z M20 10 L30 20 L20 30 L10 20 Z" />
-                                <path d="M20 15 L25 20 L20 35 M20 20 L5 20" stroke="currentColor" strokeWidth="2" fill="none" />
-                            </svg>
-                        </div>
+                        <Image
+                            src="/LOGO FILES_SECONDARY LOGO-05.svg"
+                            alt="NexusGate Logo"
+                            width={40}
+                            height={40}
+                            className="h-8 w-8 md:h-10 md:w-10 object-contain brightness-0 invert"
+                        />
                         <div>
                             <h1 className="text-base md:text-xl font-bold tracking-wide">NexusGate</h1>
                             <p className="text-[10px] md:text-xs text-gray-300 tracking-widest">Consulting</p>
