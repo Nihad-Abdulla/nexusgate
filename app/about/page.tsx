@@ -1,5 +1,6 @@
 import { PageHeader } from "@/components/core/hader-section";
-
+import { BadgeCheck, Heart, Scale, ShieldCheck, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function About() {
     return (
@@ -9,81 +10,86 @@ export default function About() {
                 <PageHeader
                     backgroundImage="https://www.shutterstock.com/image-photo/museum-future-sunset-nicknamed-most-600nw-2483595635.jpg"
                     badge="ESTABLISHED 2008 • DUBAI"
-                    title="The Standard of Excellence"
-                    subtitle="A boutique consultancy firm dedicated to navigating the complexities of the Middle Eastern market with precision and local wisdom."
+                    title="Gateway to Growth"
+                    subtitle="We provide the elite market knowledge you need to hand over the keys & grow with confidence."
                     height="lg"
                     alignment="left"
                 />
             </div>
 
-            {/* ===== OUR MISSION ===== */}
-            <section className="max-w-4xl mx-auto px-6 py-24 text-center">
-                <h2 className="font-space font-bold text-sm tracking-[0.3em] text-primary uppercase mb-8">
-                    Our Mission
-                </h2>
-                <blockquote className="font-space text-3xl md:text-5xl font-bold text-[#0f2a44] leading-tight mb-8">
-                    “To bridge global innovation with regional heritage, fostering growth for the Emirates’ future.”
-                </blockquote>
-                <div className="w-20 h-1 bg-[#35A8AD] mx-auto mb-10"></div>
-                <p className="font-arimo text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                    We provide world-class consultancy services that build the infrastructure of tomorrow’s commerce today, ensuring sustainable prosperity.
-                </p>
+            {/* ===== OUR STORY ===== */}
+            <section className="py-24 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span className="font-space font-bold text-xs tracking-[0.2em] text-primary uppercase block mb-4">
+                        OUR STORY
+                    </span>
+                    <h2 className="font-space text-4xl md:text-5xl font-bold text-[#0f2a44] mb-8 leading-tight">
+                        Bridging High-Level Strategy & Local Compliance
+                    </h2>
+                    <div className="font-arimo text-gray-600 text-lg space-y-6 leading-relaxed">
+                        <p>
+                            Nexusgate Consulting was founded by three senior partners, each bringing nearly a decade of individual expertise to a market lacking true end-to-end service.
+                        </p>
+                        <p>
+                            Our name represents a "Gateway to Growth," reflecting our commitment to managing every layer of corporate setup and residency administration.
+                        </p>
+                        <p>
+                            We established this firm to bridge the gap between high-level strategy and the complexities of local compliance. At Nexusgate, we provide the elite market knowledge you need to hand over the keys & grow with confidence.
+                        </p>
+                    </div>
+                </div>
+                <div className="relative h-[300px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+                    <img
+                        src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2069"
+                        alt="NexusGate Office"
+                        className="absolute inset-0 w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-[#0f2a44]/20"></div>
+                </div>
             </section>
 
-            {/* ===== WHO WE ARE (Split Layout) ===== */}
-            <section className="w-full bg-white py-24 border-t border-gray-100">
-                <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-                    {/* Left: Narrative */}
-                    <div>
-                        <span className="font-space font-bold text-xs tracking-[0.2em] text-primary uppercase block mb-4">
-                            Who We Are
-                        </span>
-                        <h2 className="font-space text-4xl md:text-5xl font-bold text-[#0f2a44] mb-8 leading-none">
-                            A Trusted Gateway to <br /> the Middle East.
-                        </h2>
-                        <div className="font-arimo text-gray-600 text-lg space-y-6 leading-relaxed">
-                            <p>
-                                NexusGate is a Dubai-based business consultancy helping organizations navigate regulatory complexity, market entry, and long-term growth across the GCC and wider MENA region.
-                            </p>
-                            <p>
-                                We advise startups, family offices, and multinational enterprises on entering and expanding within Middle Eastern markets. Our expertise spans market entry strategy, regulatory advisory, corporate structuring, and strategic transformation.
+            {/* ===== MISSION & VISION ===== */}
+            <section className="py-16 md:py-24 bg-[#0f2a44] text-white">
+                <div className="max-w-7xl mx-auto px-6 text-center">
+                    <span className="font-space font-bold text-xs tracking-[0.3em] text-primary uppercase opacity-80">
+                        OUR PURPOSE
+                    </span>
+                    <h2 className="font-space text-3xl md:text-4xl font-bold mt-4 mb-12 md:mb-16">
+                        Mission & Vision
+                    </h2>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 text-left">
+                        {/* Mission */}
+                        <div className="bg-white/5 p-6 md:p-10 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors">
+                            <h3 className="font-space text-xl md:text-2xl font-bold mb-4 md:mb-6 text-primary flex items-center gap-3">
+                                <BadgeCheck className="w-5 h-5 md:w-6 md:h-6" /> Our Mission
+                            </h3>
+                            <p className="font-arimo text-gray-300 leading-relaxed text-sm md:text-base">
+                                Nexusgate Consulting empowers global investors and businesses by simplifying the complexities of the UAE business landscape. We provide comprehensive, turnkey advisory services that bridge the gap between international vision and local execution, managing every operational detail to ensure our clients achieve accelerated and sustainable growth.
                             </p>
                         </div>
-                    </div>
 
-                    {/* Right: Key Points */}
-                    <div className="bg-gray-50 p-10 rounded-2xl md:p-12">
-                        <h3 className="font-space text-xl font-bold text-[#0f2a44] mb-8">
-                            Why Partner With Us?
-                        </h3>
-                        <ul className="space-y-6 font-arimo text-gray-700">
-                            {[
-                                "Deep-rooted understanding of GCC regulations",
-                                "Partner-led advisory with senior engagement",
-                                "Cross-border experience (Europe, Asia, ME)",
-                                "Long-term strategic focus on sustainability",
-                                "Direct access to government entities"
-                            ].map((item, i) => (
-                                <li key={i} className="flex items-start gap-4">
-                                    <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#35A8AD]/10 text-[#35A8AD] flex items-center justify-center text-sm font-bold mt-0.5">
-                                        ✓
-                                    </span>
-                                    <span className="text-lg">{item}</span>
-                                </li>
-                            ))}
-                        </ul>
+                        {/* Vision */}
+                        <div className="bg-white/5 p-6 md:p-10 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors">
+                            <h3 className="font-space text-xl md:text-2xl font-bold mb-4 md:mb-6 text-secondary flex items-center gap-3">
+                                <ShieldCheck className="w-5 h-5 md:w-6 md:h-6" /> Our Vision
+                            </h3>
+                            <p className="font-arimo text-gray-300 leading-relaxed text-sm md:text-base">
+                                To be the preeminent gateway for global ambition, serving as the definitive partner for international entities seeking to capitalize on the UAE's dynamic growth through seamless, end-to-end strategic excellence.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            {/* ===== OUR APPROACH (Process Strip) ===== */}
-            <section className="py-28 bg-[#0f2a44] text-white">
+            {/* ===== OUR APPROACH (Methodology) ===== */}
+            <section className="py-24 bg-white border-b border-gray-100">
                 <div className="max-w-7xl mx-auto px-6">
-                    <div className="text-center mb-20">
-                        <span className="font-space font-bold text-xs tracking-[0.3em] text-primary uppercase opacity-80">
+                    <div className="text-center mb-16">
+                        <span className="font-space font-bold text-xs tracking-[0.3em] text-primary uppercase">
                             Our Methodology
                         </span>
-                        <h2 className="font-space text-3xl md:text-4xl font-bold mt-4">
+                        <h2 className="font-space text-3xl md:text-4xl font-bold mt-4 text-[#0f2a44]">
                             Clarity. Precision. Execution.
                         </h2>
                     </div>
@@ -106,14 +112,14 @@ export default function About() {
                                 desc: "We work alongside leadership teams to ensure decisive execution and measurable impact."
                             }
                         ].map((item, idx) => (
-                            <div key={idx} className="relative group p-8 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 transition-colors">
-                                <span className="absolute -top-6 left-8 font-space text-5xl font-bold text-white/10 group-hover:text-primary transition-colors">
+                            <div key={idx} className="relative group p-8 rounded-2xl border border-gray-100 bg-gray-50 hover:bg-white hover:shadow-xl transition-all duration-300">
+                                <span className="absolute -top-6 left-8 font-space text-5xl font-bold text-gray-100 group-hover:text-primary/20 transition-colors">
                                     {item.step}
                                 </span>
                                 <h3 className="font-space text-2xl font-bold mb-4 mt-4 text-primary">
                                     {item.title}
                                 </h3>
-                                <p className="font-arimo text-gray-300 leading-relaxed">
+                                <p className="font-arimo text-gray-600 leading-relaxed">
                                     {item.desc}
                                 </p>
                             </div>
@@ -122,54 +128,125 @@ export default function About() {
                 </div>
             </section>
 
-            {/* ===== EXPERTISE (Minimal Grid) ===== */}
+            {/* ===== CORE VALUES ===== */}
             <section className="py-24 max-w-7xl mx-auto px-6">
-                <div className="mb-16">
+                <div className="text-center mb-16">
                     <span className="font-space font-bold text-xs tracking-[0.2em] text-primary uppercase">
-                        Expertise
+                        Our DNA
                     </span>
                     <h2 className="font-space text-4xl font-bold text-[#0f2a44] mt-3">
-                        Industries We Advise
+                        Core Values
                     </h2>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {[
-                        'Financial Services & Family Offices',
-                        'Technology & Digital Platforms',
-                        'Healthcare & Life Sciences',
-                        'Real Estate & Infrastructure',
-                        'Energy & Sustainability',
-                        'Government & Semi-Government Entities'
-                    ].map((industry, i) => (
-                        <div key={i} className="group p-8 bg-gray-50 hover:bg-white border border-transparent hover:border-gray-200 hover:shadow-xl transition-all duration-300 rounded-xl">
-                            <h3 className="font-space text-lg font-bold text-[#0f2a44] group-hover:text-primary transition-colors">
-                                {industry}
+                        {
+                            title: "Integrity",
+                            icon: <ShieldCheck className="w-8 h-8 text-primary" />,
+                            desc: "We uphold the highest ethical standards in every interaction, ensuring that the trust our clients place in us is met with absolute honesty & professional honour."
+                        },
+                        {
+                            title: "Accountability",
+                            icon: <BadgeCheck className="w-8 h-8 text-primary" />,
+                            desc: "We take full ownership of the \"turnkey\" promise, managing every operational detail with precision & taking responsibility for the results we deliver from start to finish."
+                        },
+                        {
+                            title: "Compassion",
+                            icon: <Heart className="w-8 h-8 text-primary" />,
+                            desc: "We approach every partnership with empathy, recognizing the human ambition behind every business and treating our clients' goals with the same care as our own."
+                        }
+                    ].map((value, i) => (
+                        <div key={i} className="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-lg transition-all text-center">
+                            <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
+                                {value.icon}
+                            </div>
+                            <h3 className="font-space text-xl font-bold text-[#0f2a44] mb-4">
+                                {value.title}
                             </h3>
+                            <p className="font-arimo text-gray-600 leading-relaxed">
+                                {value.desc}
+                            </p>
                         </div>
                     ))}
                 </div>
             </section>
 
-            {/* ===== PHILOSOPHY (Feature Box) ===== */}
-            <section className="pb-24 px-6 max-w-7xl mx-auto">
-                <div className="bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center rounded-3xl overflow-hidden relative">
-                    <div className="absolute inset-0 bg-[#0f2a44]/90"></div>
-                    <div className="relative z-10 p-12 md:p-20 text-center">
-                        <span className="font-space font-bold text-xs tracking-[0.25em] text-white/70 mb-6 block">
-                            OUR PHILOSOPHY
+            {/* ===== OUR SERVICES ===== */}
+            <section className="py-24 bg-gray-50">
+                <div className="max-w-7xl mx-auto px-6">
+                    <div className="mb-16">
+                        <span className="font-space font-bold text-xs tracking-[0.2em] text-primary uppercase">
+                            What We Do
                         </span>
-                        <h2 className="font-space text-2xl md:text-5xl font-bold text-white leading-tight mb-8 max-w-4xl mx-auto">
-                            “Strategy succeeds when global ambition is aligned with regional intelligence.”
+                        <h2 className="font-space text-4xl font-bold text-[#0f2a44] mt-3">
+                            Our Services
                         </h2>
-                        <p className="font-arimo text-lg text-gray-300 max-w-2xl mx-auto">
-                            We guide organizations through complex regulatory, cultural, and commercial environments—transforming uncertainty into sustainable growth.
-                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {[
+                            {
+                                title: "Corporate Advisory & Structuring",
+                                desc: "We provide the strategic blueprint for your business, managing legal entity selection, licensing, and full corporate setup to ensure a solid foundation in the UAE market."
+                            },
+                            {
+                                title: "Global Mobility & Residency Solutions",
+                                desc: "We manage the end-to-end residency lifecycle, specializing in Golden Visas and executive residencies, including all Govt. administration for sponsors & dependents."
+                            },
+                            {
+                                title: "Corporate Banking Support",
+                                desc: "Leveraging our deep market knowledge, we guide you through the complexities of the UAE financial landscape, facilitating corporate bank account opening & institutional requirements."
+                            },
+                            {
+                                title: "Tax Registration & Regulatory Compliance",
+                                desc: "Our experts navigate the local tax environment, managing Corporate Tax & VAT registration, filing, and ongoing compliance to protect your business from regulatory risks."
+                            },
+                            {
+                                title: "Strategic Accounting & Bookkeeping",
+                                desc: "We provide meticulous financial oversight, acting as your internal finance team through outsourced bookkeeping and reporting to maintain total transparency."
+                            },
+                            {
+                                title: "Branding",
+                                desc: "Strategic positioning within the Dubai business ecosystem to elevate your corporate identity and market presence."
+                            }
+                        ].map((service, i) => (
+                            <div key={i} className="group p-8 bg-white rounded-2xl border border-gray-100 hover:border-primary/20 hover:shadow-xl transition-all duration-300">
+                                <h3 className="font-space text-xl font-bold text-[#0f2a44] mb-4 group-hover:text-primary transition-colors">
+                                    {service.title}
+                                </h3>
+                                <p className="font-arimo text-gray-600 leading-relaxed text-sm">
+                                    {service.desc}
+                                </p>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>
 
+            {/* ===== CALL TO ACTION ===== */}
+            <section className="py-24 px-6 max-w-7xl mx-auto">
+                <div className="bg-[#0f2a44] rounded-3xl p-12 md:p-20 text-center relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+                    <div className="absolute bottom-0 left-0 w-64 h-64 bg-secondary/10 rounded-full -ml-32 -mb-32 blur-3xl"></div>
 
+                    <div className="relative z-10">
+                        <h2 className="font-space text-4xl md:text-5xl font-bold text-white mb-8">
+                            Ready to Build Your Future in the UAE?
+                        </h2>
+                        <p className="font-arimo text-gray-300 text-lg mb-10 max-w-2xl mx-auto">
+                            Partner with the experts who bridge high-level strategy and local compliance.
+                        </p>
+                        <Link
+                            href="/contact"
+                            className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-full font-space font-bold transition-all group"
+                        >
+                            Get Started
+                            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                        </Link>
+                    </div>
+                </div>
+            </section>
         </>
     );
 }
