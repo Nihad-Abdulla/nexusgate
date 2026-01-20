@@ -1,0 +1,41 @@
+'use client';
+
+import { motion } from 'framer-motion';
+
+function CompanyLogo() {
+    return (
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 535.39 595.28" className="w-20 h-20 md:w-32 md:h-32 opacity-50 hover:opacity-100 transition-opacity">
+            <path fill="#35a8ad" d="M156.15,397.68c-16.38-26.98-31.81-52.38-31.81-82s12.22-54.97,35.33-72.85c17.53-13.56,41.83-22.91,68.41-26.34l4.18-.54-1.36-3.99c-4.93-14.36-7.43-27.45-7.43-38.87,0-34.24,10.55-60.79,31.35-78.95,7.2-6.27,15.54-11.49,25.01-15.62,9.46-4.14,20.04-7.2,31.7-9.19h.02c.44-.08,16.85-2.55,17.87-2.71h-147.46c-48.53,0-87.87,39.34-87.87,87.87v171.48c0,42.69,30.44,78.27,70.8,86.21l-.03-.04c-2.93-4.99-6-10.03-8.71-14.48Z" />
+            <path fill="#35a8ad" d="M246.56,252.11c-19.88,2.01-38.02,8.59-51.08,18.53-10.39,7.89-22.75,21.87-22.75,43.59,0,22.96,14.4,46.07,32.64,75.31,3.81,6.1,7.71,12.37,11.78,19.1l3.15,5.22h133.13c.83,0,1.65-.01,2.47-.04l-107.07-161.94-2.27.22Z" />
+            <path fill="#35a8ad" d="M427.81,107.7h-78.83c-65.76,0-79.57,33.44-79.57,61.5,0,33.94,26.07,71.95,59.07,120.07l.08.12c8.02,11.7,16.31,23.8,24.76,36.61,14,21.78,28.77,44.1,43.05,65.68l5.19,7.84c23.94-15.69,39.75-42.76,39.75-73.53v-171.48c0-17.21-4.95-33.25-13.49-46.81Z" />
+        </svg>
+    );
+}
+
+export function PartnerLogos() {
+    return (
+        <section className="py-20 bg-gray-50/50">
+            <div className="max-w-7xl mx-auto px-6">
+                <div className="text-center mb-12">
+                    <span className="font-space font-bold text-[10px] tracking-[0.3em] text-gray-400 uppercase">
+                        Strategic Associations & Government Partners
+                    </span>
+                </div>
+
+                <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24">
+                    {[1, 2, 3, 4, 5].map((i) => (
+                        <motion.div
+                            key={i}
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: i * 0.1 }}
+                        >
+                            <CompanyLogo />
+                        </motion.div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+}

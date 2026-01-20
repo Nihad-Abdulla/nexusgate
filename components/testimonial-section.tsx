@@ -7,39 +7,46 @@ import { TestimonialCard } from "./core/testimonial-card"
 
 const testimonials = [
     {
-        name: "Abhilash James",
-        avatar: "/professional-man-headshot.png",
-        timeAgo: "7 months ago",
+        name: "Rahul Nair",
+        avatar: "",
+        timeAgo: "2 months ago",
         review:
-            "I recently had the opportunity to work with NexusGate Business Consultant, and I'm pleased to share a positive experience. From the initial consultation to the final implementation, their team demonstrated expertise and professionalism.",
+            "Exceptional service! They made our Dubai company formation incredibly smooth. Highly recommend Shams and the team for their dedication.",
     },
     {
-        name: "Mohammed Ghaleb",
-        avatar: "/middle-eastern-man-headshot.jpg",
-        timeAgo: "7 months ago",
+        name: "Anjali Pillai",
+        avatar: "",
+        timeAgo: "3 months ago",
         review:
-            "Shams and bilal is really awsome, and they know the peaper works and all,also a d iam suggesting every one to go for Shams and bilal for your business setup in UAE.",
+            "The level of professionalism and local expertise at NexusGate is unmatched. They handled everything from visas to licensing flawlessly.",
     },
     {
-        name: "Arun Mozhi",
-        avatar: "/indian-man-headshot.png",
-        timeAgo: "7 months ago",
+        name: "Vishnu Prasad",
+        avatar: "",
+        timeAgo: "4 months ago",
         review:
-            "Working with Vishnu subhas made the entire setup process seamless. Their combined expertise and professionalism stood out from the beginning. Highly recommend their services!",
+            "Fast, reliable, and transparent. NexusGate is the best partner for anyone looking to set up business in the UAE. Truly a turnkey solution.",
     },
     {
-        name: "Ravi Sandhu",
-        avatar: "/sikh-man-headshot.jpg",
-        timeAgo: "7 months ago",
-        review:
-            "worked with amsal and their attention to detail is on point, super professional from start to finish, made everything feel easy and stress-free. Highly recommend!",
-    },
-    {
-        name: "Sarah Johnson",
-        avatar: "/professional-woman-headshot.png",
+        name: "Meera Krishnan",
+        avatar: "",
         timeAgo: "5 months ago",
         review:
-            "Excellent service and support throughout the entire business setup process. The team was knowledgeable and always available to answer my questions. Would definitely recommend!",
+            "I was worried about the paperwork, but Vishnu Subhas and the pro team made it feel effortless. Great experience from start to finish!",
+    },
+    {
+        name: "Arjun Das",
+        avatar: "",
+        timeAgo: "6 months ago",
+        review:
+            "Highly efficient team. They reserved our trade name and got our license issued in record time. Professional guys with great integrity!",
+    },
+    {
+        name: "Swapna Joseph",
+        avatar: "",
+        timeAgo: "7 months ago",
+        review:
+            "NexusGate provided end-to-end support for our startup. Their transparent pricing and strategic advice were key to our successful launch.",
     },
 ]
 

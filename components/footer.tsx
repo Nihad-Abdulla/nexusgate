@@ -35,11 +35,11 @@ export function Footer() {
                                     className="h-8 w-8 object-contain brightness-0 invert"
                                 />
                                 <div>
-                                    <h2 className="text-lg font-bold">NexusGate</h2>
-                                    <p className="text-xs text-white/60 tracking-wider">Consulting</p>
+                                    <h2 className="text-lg font-bold font-space">NexusGate</h2>
+                                    <p className="text-xs text-white/60 tracking-wider font-space">Consulting</p>
                                 </div>
                             </div>
-                            <p className="text-white/70 text-sm leading-relaxed">
+                            <p className="text-white/70 text-sm leading-relaxed font-arimo">
                                 Your trusted partner for business setup and corporate services in the UAE. We help entrepreneurs and
                                 businesses establish and grow their presence.
                             </p>
@@ -47,11 +47,11 @@ export function Footer() {
 
                         {/* Quick Links */}
                         <div>
-                            <h3 className="text-lg font-semibold mb-4 text-white">Quick Links</h3>
+                            <h3 className="text-lg font-semibold mb-4 text-white font-space">Quick Links</h3>
                             <ul className="space-y-2">
                                 {quickLinks.map((link) => (
                                     <li key={link.href}>
-                                        <Link href={link.href} className="text-white/70 hover:text-white transition-colors text-sm">
+                                        <Link href={link.href} className="text-white/70 hover:text-white transition-colors text-sm font-arimo">
                                             {link.label}
                                         </Link>
                                     </li>
@@ -61,11 +61,11 @@ export function Footer() {
 
                         {/* Services */}
                         <div>
-                            <h3 className="text-lg font-semibold mb-4 text-white">Our Services</h3>
+                            <h3 className="text-lg font-semibold mb-4 text-white font-space">Our Services</h3>
                             <ul className="space-y-2">
                                 {services.map((service) => (
                                     <li key={service.href}>
-                                        <Link href={service.href} className="text-white/70 hover:text-white transition-colors text-sm">
+                                        <Link href={service.href} className="text-white/70 hover:text-white transition-colors text-sm font-arimo">
                                             {service.label}
                                         </Link>
                                     </li>
@@ -75,16 +75,16 @@ export function Footer() {
 
                         {/* Contact Info */}
                         <div>
-                            <h3 className="text-lg font-semibold mb-4 text-white">Contact Us</h3>
+                            <h3 className="text-lg font-semibold mb-4 text-white font-space">Contact Us</h3>
                             <ul className="space-y-3">
-                                <li className="flex items-start gap-3">
+                                <li className="flex items-start gap-3 text-white/70 text-sm font-arimo">
                                     <MapPin className="h-5 w-5 text-white shrink-0 mt-0.5" />
-                                    <span className="text-white/70 text-sm">UAE 055 19, United Arab Emirates</span>
+                                    <span>UAE 055 19, United Arab Emirates</span>
                                 </li>
                                 <li>
                                     <a
                                         href="tel:+971505459200"
-                                        className="flex items-start gap-3 text-white/70 hover:text-white transition-colors"
+                                        className="flex items-start gap-3 text-white/70 hover:text-white transition-colors font-arimo"
                                     >
                                         <Phone className="h-5 w-5 text-white shrink-0 mt-0.5" />
                                         <span className="text-sm">+971 50 545 9200</span>
@@ -93,7 +93,7 @@ export function Footer() {
                                 <li>
                                     <a
                                         href="mailto:info@gokitepro.com"
-                                        className="flex items-start gap-3 text-white/70 hover:text-white transition-colors"
+                                        className="flex items-start gap-3 text-white/70 hover:text-white transition-colors font-arimo"
                                     >
                                         <Mail className="h-5 w-5 text-white shrink-0 mt-0.5" />
                                         <span className="text-sm">info@gokitepro.com</span>

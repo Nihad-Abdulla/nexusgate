@@ -11,20 +11,42 @@ interface TestimonialCardProps {
 
 export function TestimonialCard({ name, avatar, timeAgo, review, rating = 5 }: TestimonialCardProps) {
     return (
-        <div className="min-w-[280px] md:min-w-[320px] bg-white rounded-2xl p-4 md:p-5 shadow-sm border border-gray-100 flex flex-col gap-3">
+        <div className="min-w-[280px] md:min-w-[320px] bg-white rounded-2xl p-4 md:p-5 border border-gray-100 flex flex-col gap-3">
             {/* Header */}
             <div className="flex items-start justify-between">
                 <div className="flex items-center gap-3">
-                    <Image
-                        src={avatar || "/placeholder.svg"}
-                        alt={name}
-                        width={44}
-                        height={44}
-                        className="rounded-full object-cover"
-                    />
+                    <div className="relative w-11 h-11 shrink-0">
+                        {/* Overlap Effect Background */}
+                        <div className="absolute inset-0 bg-primary/10 rounded-full -translate-x-1 translate-y-1" />
+
+                        {avatar ? (
+                            <Image
+                                src={avatar}
+                                alt={name}
+                                width={44}
+                                height={44}
+                                className="rounded-full object-cover relative z-10 border border-white"
+                            />
+                        ) : (
+                            <div className="w-full h-full bg-gray-100 rounded-full flex items-center justify-center relative z-10 border border-white text-gray-400">
+                                <svg
+                                    className="w-6 h-6"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                >
+                                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                                    <circle cx="12" cy="7" r="4" />
+                                </svg>
+                            </div>
+                        )}
+                    </div>
                     <div>
-                        <h4 className="font-semibold text-sm md:text-base text-[#1e3a5f]">{name}</h4>
-                        <p className="text-xs text-gray-500">{timeAgo}</p>
+                        <h4 className="font-space font-bold text-sm md:text-base text-[#1e3a5f]">{name}</h4>
+                        <p className="text-xs text-gray-500 font-arimo">{timeAgo}</p>
                     </div>
                 </div>
                 {/* Google Icon */}
@@ -60,10 +82,10 @@ export function TestimonialCard({ name, avatar, timeAgo, review, rating = 5 }: T
             </div>
 
             {/* Review Text */}
-            <p className="text-sm text-gray-700 line-clamp-3">{review}</p>
+            <p className="text-sm text-gray-700 line-clamp-3 font-arimo">{review}</p>
 
             {/* Read More */}
-            <button className="text-sm text-gray-500 hover:text-[#1e3a5f] text-left transition-colors">Read more</button>
+            <button className="text-sm text-gray-500 hover:text-[#1e3a5f] text-left transition-colors font-arimo">Read more</button>
         </div>
     )
 }
