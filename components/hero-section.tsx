@@ -80,7 +80,7 @@ export function HeroSection() {
                             size="lg"
                             className="w-full sm:w-auto bg-primary hover:bg-[#2c8c91] text-white font-space font-bold px-8 py-6 md:px-10 md:py-7 rounded-full text-base md:text-lg shadow-lg transition-all hover:-translate-y-1 active:scale-95"
                         >
-                            <Link href="/consultation">
+                            <Link href="/contact">
                                 Get Started
                                 <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
                             </Link>

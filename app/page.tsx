@@ -202,7 +202,7 @@ export default function Home() {
             Join hundreds of successful companies who trusted NexusGate to build their foundation in Dubai.
           </p>
           <a
-            href="/consultation"
+            href="/contact"
             className="inline-block bg-primary hover:bg-[#2c8c91] text-white font-space font-bold py-4 px-10 rounded-full transition-all transform hover:-translate-y-1 hover:shadow-lg"
           >
             Start Your Journey

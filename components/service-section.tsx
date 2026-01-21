@@ -49,7 +49,7 @@ export function ServicesSection() {
                             single roof.
                         </p>
                     </div>
-                    <Link href="/get-quote">
+                    <Link href="/contact">
                         <Button className="bg-primary hover:bg-[#2c8c91] text-white rounded-full px-6 py-6 flex items-center gap-2 whitespace-nowrap font-space font-bold">
                             Get Quote for your business Setup
                             <ArrowUpRight className="w-5 h-5" />

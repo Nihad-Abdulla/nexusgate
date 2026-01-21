@@ -56,7 +56,7 @@ export default async function ServicePage({ params }: PageProps) {
 
                         <div className="mt-10">
                             <Button asChild size="lg" className="bg-primary hover:bg-[#2c8c91] text-white rounded-full px-8">
-                                <Link href="/consultation">Get Free Consultation</Link>
+                                <Link href="/contact">Get Free Consultation</Link>
                             </Button>
                         </div>
                     </div>
