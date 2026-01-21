@@ -3,6 +3,13 @@ import { BlogSection } from "@/components/blog-section";
 import { PageHeader } from "@/components/core/hader-section";
 import { blogs } from "@/data/blog";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Insights & News",
+    description: "Latest updates on UAE business laws, corporate tax, and market trends from NexusGate experts.",
+};
+
 export default function Blog() {
     const [featuredBlog, ...otherBlogs] = blogs;
 

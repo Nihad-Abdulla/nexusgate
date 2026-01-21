@@ -6,6 +6,13 @@ import { TestimonialsSection } from "@/components/testimonial-section";
 import { AnimatedJourney } from "@/components/home/animated-journey";
 import { PartnerLogos } from "@/components/home/partner-logos";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Business Setup in Dubai & UAE | NexusGate",
+  description: "Your gateway to business setup in Dubai. We specialize in Mainland & Free Zone company formation, Golden Visas, and Corporate Tax compliance.",
+};
+
 export default function Home() {
   return (
     <>

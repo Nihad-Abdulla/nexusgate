@@ -2,6 +2,13 @@ import { ContactSection } from "@/components/contact-section";
 import ContactForm from "@/components/core/contact-form";
 import { PageHeader } from "@/components/core/hader-section";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Contact Us",
+    description: "Get in touch with NexusGate for a free consultation on company formation, visas, and legal services in Dubai.",
+};
+
 export default function Contact() {
     const sampleContactInfo = [
         {

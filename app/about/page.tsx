@@ -2,6 +2,13 @@ import { PageHeader } from "@/components/core/hader-section";
 import { BadgeCheck, Heart, Scale, ShieldCheck, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "About Us",
+    description: "Learn about NexusGate's mission to bridge the gap between global investors and the UAE market through expert corporate consultancy.",
+};
+
 export default function About() {
     return (
         <>

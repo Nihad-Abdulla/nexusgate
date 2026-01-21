@@ -20,8 +20,20 @@ const arimo = Arimo({
 })
 
 export const metadata: Metadata = {
-  title: "NexusGate - Business Setup in UAE",
+  metadataBase: new URL("https://nexusgateuae.com"),
+  title: {
+    default: "NexusGate - Business Setup in UAE",
+    template: "%s | NexusGate",
+  },
   description: "Your trusted partner for business setup and corporate services in the UAE",
+  keywords: ["Business Setup Dubai", "UAE Company Formation", "Golden Visa UAE", "Corporate Tax UAE", "PRO Services Dubai"],
+  openGraph: {
+    type: "website",
+    locale: "en_AE",
+    url: "https://nexusgateuae.com",
+    siteName: "NexusGate Consulting",
+    images: ["/og-image.jpg"], // Ensure this file exists or use a remote URL
+  },
   icons: {
     icon: [
       {
