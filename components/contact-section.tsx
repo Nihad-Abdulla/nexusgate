@@ -11,12 +11,18 @@ interface ContactInfo {
     subtext?: string;
 }
 
+interface SocialLink {
+    icon: 'instagram' | 'linkedin' | 'facebook' | 'twitter';
+    href: string;
+}
+
 interface ContactSectionProps {
     locationTitle: string;
     locationSubtext?: string;
     contactInfo: ContactInfo[];
     mapEmbedUrl: string;
     directionsUrl?: string;
+    socialLinks?: SocialLink[];
 }
 
 export function ContactSection({
@@ -24,7 +30,8 @@ export function ContactSection({
     locationSubtext,
     contactInfo,
     mapEmbedUrl,
-    directionsUrl
+    directionsUrl,
+    socialLinks
 }: ContactSectionProps) {
     const getIcon = (iconType: string) => {
         switch (iconType) {
@@ -36,6 +43,17 @@ export function ContactSection({
                 return <Mail className="w-8 h-8 text-primary" />;
             default:
                 return null;
+        }
+    };
+
+    const getSocialIcon = (type: string) => {
+        const { Instagram, Linkedin, Facebook, Twitter } = require("lucide-react");
+        switch (type) {
+            case 'instagram': return <Instagram className="w-5 h-5" />;
+            case 'linkedin': return <Linkedin className="w-5 h-5" />;
+            case 'facebook': return <Facebook className="w-5 h-5" />;
+            case 'twitter': return <Twitter className="w-5 h-5" />;
+            default: return null;
         }
     };
 
@@ -88,6 +106,25 @@ export function ContactSection({
                     ))}
                 </div>
 
+                {socialLinks && socialLinks.length > 0 && (
+                    <div className="flex flex-col items-center gap-6 mb-16">
+                        <p className="text-sm font-semibold text-gray-400 uppercase tracking-[0.2em]">Connect With Us</p>
+                        <div className="flex gap-4">
+                            {socialLinks.map((social, idx) => (
+                                <a
+                                    key={idx}
+                                    href={social.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-primary/10 p-4 rounded-full text-primary hover:bg-primary hover:text-white transition-all duration-300"
+                                >
+                                    {getSocialIcon(social.icon)}
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+                )}
+
                 {/* Map Section */}
                 <div>
                     <div className="flex justify-between items-center mb-6">
@@ -97,7 +134,7 @@ export function ContactSection({
                                 href={directionsUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-[#c9a961] font-semibold uppercase tracking-wider hover:text-[#1e3a5f] transition-colors"
+                                className="text-primary font-semibold uppercase tracking-wider hover:text-[#1e3a5f] transition-colors"
                             >
                                 GET DIRECTIONS
                             </Link>

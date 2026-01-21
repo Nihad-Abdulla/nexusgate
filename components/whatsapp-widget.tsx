@@ -6,7 +6,7 @@ import React from "react"
 export function WhatsappWidget() {
     // Replace with your actual WhatsApp number
     // Format: Country code without +, e.g., 971501234567
-    const phoneNumber = "971501234567"
+    const phoneNumber = "971588975654"
     const message = "Hello! I would like to know more about your services."
 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`

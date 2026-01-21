@@ -36,7 +36,7 @@ export function ServicesSection() {
     }, [isPaused])
 
     return (
-        <section className="py-16 md:py-24 bg-white">
+        <section id="services" className="py-16 md:py-24 bg-white">
             <div className="container mx-auto px-4">
                 {/* Section Header */}
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6 mb-10">
