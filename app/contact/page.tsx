@@ -43,10 +43,10 @@ export default function Contact() {
             <div className="p-2 g-gray-100">
 
                 <PageHeader
-                    backgroundImage="https://images.unsplash.com/photo-1512453979798-5ea904ac66de?q=80&w=2070&auto=format&fit=crop"
-                    badge="• DUBAI"
-                    title="The Standard of Excellence"
-                    subtitle="A boutique consultancy firm dedicated to navigating the complexities of the Middle Eastern market with precision and local wisdom."
+                    backgroundImage="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
+                    badge="GET IN TOUCH"
+                    title="Your Success Starts with a Conversation"
+                    subtitle="Connect with our senior partners today to navigate your UAE business journey with confidence and clarity."
                     height="lg"
                     alignment="left"
                 />

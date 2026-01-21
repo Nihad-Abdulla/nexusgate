@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { Toast } from '@/components/ui/simple-toast';
 
 const interests = [
     'Strategy',
@@ -13,6 +14,15 @@ export default function ContactForm() {
     const [selectedInterest, setSelectedInterest] = useState<string | null>(
         'Market Entry'
     );
+    const [showToast, setShowToast] = useState(false);
+
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        // Here you would typically send the data to your backend
+        setShowToast(true);
+        e.currentTarget.reset();
+        setSelectedInterest('Market Entry');
+    };
 
     return (
         <section className="bg-white py-16 px-4">
@@ -28,7 +38,7 @@ export default function ContactForm() {
                 </div>
 
                 {/* Form */}
-                <form className="space-y-8 border border-primary/30 rounded-2xl p-6 md:p-8">
+                <form onSubmit={handleSubmit} className="space-y-8 border border-primary/30 rounded-2xl p-6 md:p-8">
                     {/* Full Name */}
                     <div>
                         <label className="block text-sm font-semibold text-gray-400 uppercase tracking-wider mb-2">
@@ -36,6 +46,7 @@ export default function ContactForm() {
                         </label>
                         <input
                             type="text"
+                            required
                             placeholder="Johnathan Doe"
                             className="w-full rounded-xl border border-gray-200 px-5 py-3 text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
                         />
@@ -48,6 +59,7 @@ export default function ContactForm() {
                         </label>
                         <input
                             type="text"
+                            required
                             placeholder="Global Enterprises Ltd."
                             className="w-full rounded-xl border border-gray-200 px-5 py-3 text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
                         />
@@ -89,6 +101,7 @@ export default function ContactForm() {
                         </label>
                         <textarea
                             rows={6}
+                            required
                             placeholder="How can we assist your expansion?"
                             className="w-full rounded-xl border border-gray-200 px-5 py-3 text-base resize-none focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
                         />
@@ -104,6 +117,11 @@ export default function ContactForm() {
                     </button>
                 </form>
             </div>
+            <Toast
+                message="Thank you! Your inquiry has been sent."
+                isVisible={showToast}
+                onClose={() => setShowToast(false)}
+            />
         </section>
     );
 }

@@ -11,10 +11,10 @@ export default function Blog() {
 
             <div className="p-2 bg-gray-100">
                 <PageHeader
-                    backgroundImage="https://www.shutterstock.com/image-photo/museum-future-sunset-nicknamed-most-600nw-2483595635.jpg"
-                    badge="ESTABLISHED 2008 • DUBAI"
-                    title="The Standard of Excellence"
-                    subtitle="A boutique consultancy firm dedicated to navigating the complexities of the Middle Eastern market with precision and local wisdom."
+                    backgroundImage="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074&auto=format&fit=crop"
+                    badge="INSIGHTS"
+                    title="The Nexus of Strategy & Innovation"
+                    subtitle="Expert perspectives on UAE's dynamic market, regulatory changes, and corporate excellence."
                     height="lg"
                     alignment="left"
                 />

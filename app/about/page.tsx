@@ -8,10 +8,10 @@ export default function About() {
             {/* ===== HEADER ===== */}
             <div className="p-2 bg-gray-100">
                 <PageHeader
-                    backgroundImage="https://www.shutterstock.com/image-photo/museum-future-sunset-nicknamed-most-600nw-2483595635.jpg"
-                    badge="ESTABLISHED 2008 • DUBAI"
-                    title="Gateway to Growth"
-                    subtitle="We provide the elite market knowledge you need to hand over the keys & grow with confidence."
+                    backgroundImage="https://images.unsplash.com/photo-1541872703-74c5e443d1fe?q=80&w=2062&auto=format&fit=crop"
+                    badge="OUR STORY"
+                    title="The Architects of Business Excellence"
+                    subtitle="Founded on precision and deep local expertise, NexusGate is the premier boutique consultancy firm for global investors in the UAE."
                     height="lg"
                     alignment="left"
                 />
