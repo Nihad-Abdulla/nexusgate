@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Space_Grotesk, Arimo } from "next/font/google"
+import { GoogleAnalytics } from "@next/third-parties/google"
 
 import { Loader } from "@/components/loader"
 import { Footer } from "@/components/footer"
@@ -27,12 +28,15 @@ export const metadata: Metadata = {
   },
   description: "Your trusted partner for business setup and corporate services in the UAE",
   keywords: ["Business Setup Dubai", "UAE Company Formation", "Golden Visa UAE", "Corporate Tax UAE", "PRO Services Dubai"],
+  verification: {
+    google: "YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE",
+  },
   openGraph: {
     type: "website",
     locale: "en_AE",
     url: "https://nexusgateuae.com",
     siteName: "NexusGate Consulting",
-    images: ["/og-image.jpg"], // Ensure this file exists or use a remote URL
+    images: ["/og-image.jpg"],
   },
   icons: {
     icon: [
@@ -58,7 +62,7 @@ export default function RootLayout({
         <main className="min-h-screen">{children}</main>
         <WhatsappWidget />
         <Footer />
-
+        <GoogleAnalytics gaId="YOUR_GA_MEASUREMENT_ID" />
       </body>
     </html>
   )
