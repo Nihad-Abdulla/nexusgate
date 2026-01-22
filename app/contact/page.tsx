@@ -50,7 +50,7 @@ export default function Contact() {
             <div className="p-2 g-gray-100">
 
                 <PageHeader
-                    backgroundImage="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
+                    backgroundImage="/images/contact-header.jpg"
                     badge="GET IN TOUCH"
                     title="Your Success Starts with a Conversation"
                     subtitle="Connect with our senior partners today to navigate your UAE business journey with confidence and clarity."

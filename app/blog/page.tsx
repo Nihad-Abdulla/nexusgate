@@ -18,7 +18,7 @@ export default function Blog() {
 
             <div className="p-2 bg-gray-100">
                 <PageHeader
-                    backgroundImage="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074&auto=format&fit=crop"
+                    backgroundImage="/images/blog-header.jpg"
                     badge="INSIGHTS"
                     title="The Nexus of Strategy & Innovation"
                     subtitle="Expert perspectives on UAE's dynamic market, regulatory changes, and corporate excellence."

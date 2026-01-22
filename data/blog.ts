@@ -25,7 +25,7 @@ export const blogs: Blog[] = [
         category: 'Corporate Advisory',
         publishedAt: 'Jan 15, 2024',
         readTime: '10 min read',
-        image: 'https://images.unsplash.com/photo-1582653291997-079a1c04e5a1?auto=format&fit=crop&q=80&w=2070',
+        image: '/images/blog-business-structuring.jpg',
         content: [
             {
                 type: 'paragraph',
@@ -69,7 +69,7 @@ export const blogs: Blog[] = [
         category: 'Global Mobility',
         publishedAt: 'Jan 18, 2024',
         readTime: '8 min read',
-        image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=2070',
+        image: '/images/service-global-mobility.jpg',
         content: [
             {
                 type: 'paragraph',
@@ -109,7 +109,7 @@ export const blogs: Blog[] = [
         category: 'Tax & Compliance',
         publishedAt: 'Jan 22, 2024',
         readTime: '12 min read',
-        image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=2011',
+        image: '/images/blog-tax-compliance.jpg',
         content: [
             {
                 type: 'paragraph',
@@ -149,7 +149,7 @@ export const blogs: Blog[] = [
         category: 'Banking Support',
         publishedAt: 'Jan 25, 2024',
         readTime: '7 min read',
-        image: 'https://images.unsplash.com/photo-1601597111158-2fcee29a4a39?auto=format&fit=crop&q=80&w=2070',
+        image: '/images/service-banking-support.jpg',
         content: [
             {
                 type: 'paragraph',
@@ -189,7 +189,7 @@ export const blogs: Blog[] = [
         category: 'Strategic Accounting',
         publishedAt: 'Jan 28, 2024',
         readTime: '9 min read',
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2015',
+        image: '/images/service-financial-management.jpg',
         content: [
             {
                 type: 'paragraph',
@@ -226,7 +226,7 @@ export const blogs: Blog[] = [
         category: 'Branding',
         publishedAt: 'Feb 02, 2024',
         readTime: '6 min read',
-        image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=2074',
+        image: '/images/service-corporate-branding.jpg',
         content: [
             {
                 type: 'paragraph',
@@ -262,7 +262,7 @@ export const blogs: Blog[] = [
         category: 'Wealth Advisory',
         publishedAt: 'Feb 10, 2024',
         readTime: '11 min read',
-        image: 'https://images.unsplash.com/photo-1541339907198-e08759dfc3f3?auto=format&fit=crop&q=80&w=2070',
+        image: '/images/blog-wealth-hub.jpg',
         content: [
             {
                 type: 'paragraph',

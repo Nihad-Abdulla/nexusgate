@@ -15,7 +15,7 @@ export default function About() {
             {/* ===== HEADER ===== */}
             <div className="p-2 bg-gray-100">
                 <PageHeader
-                    backgroundImage="https://images.unsplash.com/photo-1541872703-74c5e443d1fe?q=80&w=2062&auto=format&fit=crop"
+                    backgroundImage="/images/about-header.jpg"
                     badge="OUR STORY"
                     title="The Architects of Business Excellence"
                     subtitle="Founded on precision and deep local expertise, NexusGate is the premier boutique consultancy firm for global investors in the UAE."
@@ -47,7 +47,7 @@ export default function About() {
                 </div>
                 <div className="relative h-[300px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                     <img
-                        src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2069"
+                        src="/images/about-story.jpg"
                         alt="NexusGate Office"
                         className="absolute inset-0 w-full h-full object-cover"
                     />

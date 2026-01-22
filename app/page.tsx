@@ -41,7 +41,7 @@ export default function Home() {
           {/* Right: Image */}
           <div className="relative rounded-2xl overflow-hidden shadow-2xl">
             <img
-              src="https://images.unsplash.com/photo-1512453979798-5ea904ac66de?q=80&w=2070&auto=format&fit=crop"
+              src="/images/home-intro.jpg"
               alt="Dubai Business"
               className="w-full h-full object-cover aspect-video hover:scale-105 transition-transform duration-700"
             />
