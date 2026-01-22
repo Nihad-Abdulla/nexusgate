@@ -2,16 +2,23 @@ import { PageHeader } from "@/components/core/hader-section";
 import { BadgeCheck, Heart, Scale, ShieldCheck, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "About Us",
+    description: "Learn about NexusGate's mission to bridge the gap between global investors and the UAE market through expert corporate consultancy.",
+};
+
 export default function About() {
     return (
         <>
             {/* ===== HEADER ===== */}
             <div className="p-2 bg-gray-100">
                 <PageHeader
-                    backgroundImage="https://www.shutterstock.com/image-photo/museum-future-sunset-nicknamed-most-600nw-2483595635.jpg"
-                    badge="ESTABLISHED 2008 • DUBAI"
-                    title="Gateway to Growth"
-                    subtitle="We provide the elite market knowledge you need to hand over the keys & grow with confidence."
+                    backgroundImage="/images/about-header.jpg"
+                    badge="OUR STORY"
+                    title="The Architects of Business Excellence"
+                    subtitle="Founded on precision and deep local expertise, NexusGate is the premier boutique consultancy firm for global investors in the UAE."
                     height="lg"
                     alignment="left"
                 />
@@ -40,7 +47,7 @@ export default function About() {
                 </div>
                 <div className="relative h-[300px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                     <img
-                        src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2069"
+                        src="/images/about-story.jpg"
                         alt="NexusGate Office"
                         className="absolute inset-0 w-full h-full object-cover"
                     />

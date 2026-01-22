@@ -3,6 +3,13 @@ import { BlogSection } from "@/components/blog-section";
 import { PageHeader } from "@/components/core/hader-section";
 import { blogs } from "@/data/blog";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Insights & News",
+    description: "Latest updates on UAE business laws, corporate tax, and market trends from NexusGate experts.",
+};
+
 export default function Blog() {
     const [featuredBlog, ...otherBlogs] = blogs;
 
@@ -11,10 +18,10 @@ export default function Blog() {
 
             <div className="p-2 bg-gray-100">
                 <PageHeader
-                    backgroundImage="https://www.shutterstock.com/image-photo/museum-future-sunset-nicknamed-most-600nw-2483595635.jpg"
-                    badge="ESTABLISHED 2008 • DUBAI"
-                    title="The Standard of Excellence"
-                    subtitle="A boutique consultancy firm dedicated to navigating the complexities of the Middle Eastern market with precision and local wisdom."
+                    backgroundImage="/images/blog-header.jpg"
+                    badge="INSIGHTS"
+                    title="The Nexus of Strategy & Innovation"
+                    subtitle="Expert perspectives on UAE's dynamic market, regulatory changes, and corporate excellence."
                     height="lg"
                     alignment="left"
                 />

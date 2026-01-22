@@ -1,5 +1,6 @@
 import { services } from "@/data/services";
 import { notFound } from "next/navigation";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
@@ -16,6 +17,25 @@ export async function generateStaticParams() {
     return services.map((service) => ({
         slug: service.slug,
     }));
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+    const { slug } = await params;
+    const service = services.find((s) => s.slug === slug);
+
+    if (!service) {
+        return {
+            title: "Service Not Found",
+        };
+    }
+
+    return {
+        title: service.title,
+        description: service.shortDescription,
+        openGraph: {
+            images: [service.image],
+        },
+    };
 }
 
 export default async function ServicePage({ params }: PageProps) {
@@ -56,7 +76,7 @@ export default async function ServicePage({ params }: PageProps) {
 
                         <div className="mt-10">
                             <Button asChild size="lg" className="bg-primary hover:bg-[#2c8c91] text-white rounded-full px-8">
-                                <Link href="/consultation">Get Free Consultation</Link>
+                                <Link href="/contact">Get Free Consultation</Link>
                             </Button>
                         </div>
                     </div>

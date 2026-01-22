@@ -15,7 +15,7 @@ export const services: Service[] = [
         title: "Corporate Incorporation & Licensing",
         shortDescription: "Seamless Company Formation",
         fullDescription: "We facilitate seamless company formation across UAE Mainland and Free Zones, overseeing the entire lifecycle from initial trade license acquisition to seamless annual renewals. Our team ensures that your corporate structure is both compliant and optimized for your specific business activities.",
-        image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2070",
+        image: "/images/service-corporate-incorporation.jpg",
         icon: "🏢",
         benefits: [
             "Mainland & Free Zone licensing expertise",
@@ -35,7 +35,7 @@ export const services: Service[] = [
         title: "Government Relations & Regulatory Liaison",
         shortDescription: "Expert Govt. Liaison (PRO)",
         fullDescription: "Our experts manage all essential interactions with authorities and departments, securing the critical approvals required for your business to operate legally. We act as your bridge to the UAE government, ensuring that every regulatory requirement is met with precision and speed.",
-        image: "https://images.unsplash.com/photo-1541872703-74c5e443d1fe?auto=format&fit=crop&q=80&w=2062",
+        image: "/images/service-government-relations.jpg",
         icon: "🤝",
         benefits: [
             "Liaising with DED, MOHRE, and Immigration",
@@ -55,7 +55,7 @@ export const services: Service[] = [
         title: "Global Mobility & Residency Solutions",
         shortDescription: "Golden Visa & Executive Residency",
         fullDescription: "We manage the end-to-end residency cycle, specializing in Golden Visa and executive residencies including all government administration for both corporate sponsors and dependents. Our priority is ensuring a smooth transition for you and your key personnel.",
-        image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=2070",
+        image: "/images/service-global-mobility.jpg",
         icon: "🛂",
         benefits: [
             "10-Year Golden Visa specialized processing",
@@ -75,7 +75,7 @@ export const services: Service[] = [
         title: "Taxation & Statutory Compliance",
         shortDescription: "Corporate Tax & VAT Experts",
         fullDescription: "Our team ensures your business adheres to the latest UAE fiscal regulations through expert Tax registration and ongoing compliance management for both VAT and Corporate Tax. We protect your enterprise from regulatory risks and financial penalties.",
-        image: "https://images.unsplash.com/photo-1554224155-1f9129515582?auto=format&fit=crop&q=80&w=2012",
+        image: "/images/service-taxation-compliance.jpg",
         icon: "⚖️",
         benefits: [
             "Corporate Tax registration & impact assessment",
@@ -95,7 +95,7 @@ export const services: Service[] = [
         title: "Financial Management & Bookkeeping",
         shortDescription: "Precision Accounting Services",
         fullDescription: "We deliver precise accounting and bookkeeping services that safeguard your financial integrity and ensure your records meet international standards and local regulatory requirements. Our meticulous oversight provides you with the transparency needed for strategic growth.",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2015",
+        image: "/images/service-financial-management.jpg",
         icon: "📊",
         benefits: [
             "Outsourced bookkeeping & accounting",
@@ -115,7 +115,7 @@ export const services: Service[] = [
         title: "Banking & Financial Support",
         shortDescription: "Strategic Banking Solutions",
         fullDescription: "We bridge the gap between your business and financial institutions, providing strategic support to streamline the corporate bank account opening process and ongoing banking needs. Our relationships with major UAE banks help you overcome institutional hurdles.",
-        image: "https://images.unsplash.com/photo-1601597111158-2fcee29a4a39?auto=format&fit=crop&q=80&w=2070",
+        image: "/images/service-banking-support.jpg",
         icon: "🏦",
         benefits: [
             "Corporate bank account opening assistance",
@@ -135,7 +135,7 @@ export const services: Service[] = [
         title: "Corporate Branding",
         shortDescription: "Premium Visual Identity",
         fullDescription: "Beyond administration, we help establish your market presence through professional branding services that build a strong and recognizable identity for your new venture. We ensure your business is perceived with the authority and prestige it deserves.",
-        image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=2074",
+        image: "/images/service-corporate-branding.jpg",
         icon: "🎨",
         benefits: [
             "Bespoke logo & visual identity design",

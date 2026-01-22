@@ -36,21 +36,21 @@ export function ServicesSection() {
     }, [isPaused])
 
     return (
-        <section className="py-16 md:py-24 bg-white">
+        <section id="services" className="py-16 md:py-24 bg-white">
             <div className="container mx-auto px-4">
                 {/* Section Header */}
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6 mb-10">
                     <div className="max-w-2xl">
-                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0f2a44] mb-3 italic">
+                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0f2a44] mb-3 italic font-space">
                             What can we do for you to setup business in UAE?
                         </h2>
-                        <p className="text-gray-600">
+                        <p className="text-gray-600 font-arimo">
                             We offer a complete package of services such as company formation, PRO, legal and HR services, all in a
                             single roof.
                         </p>
                     </div>
-                    <Link href="/get-quote">
-                        <Button className="bg-primary hover:bg-[#2c8c91] text-white rounded-full px-6 py-6 flex items-center gap-2 whitespace-nowrap">
+                    <Link href="/contact">
+                        <Button className="bg-primary hover:bg-[#2c8c91] text-white rounded-full px-6 py-6 flex items-center gap-2 whitespace-nowrap font-space font-bold">
                             Get Quote for your business Setup
                             <ArrowUpRight className="w-5 h-5" />
                         </Button>

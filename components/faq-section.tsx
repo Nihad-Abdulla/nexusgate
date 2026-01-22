@@ -55,12 +55,12 @@ export function FAQSection() {
                 <div className="max-w-3xl mx-auto bg-white rounded-3xl shadow-lg p-5 md:p-12">
                     <div className="flex justify-center mb-4 md:mb-6">
                         <div className="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-[#1e3a5f] flex items-center justify-center">
-                            <span className="text-2xl md:text-3xl font-bold ">?</span>
+                            <span className="text-2xl md:text-3xl font-bold font-space">?</span>
                         </div>
                     </div>
 
-                    <h2 className="text-xl md:text-3xl font-bold text-center mb-2">Frequently Asked Questions</h2>
-                    <p className="text-sm md:text-base text-gray-500 text-center mb-6 md:mb-8">
+                    <h2 className="text-xl md:text-3xl font-bold text-center mb-2 font-space">Frequently Asked Questions</h2>
+                    <p className="text-sm md:text-base text-gray-500 text-center mb-6 md:mb-8 font-arimo">
                         Know about your query and popularly asked questions
                     </p>
 
@@ -74,7 +74,7 @@ export function FAQSection() {
                                     onClick={() => toggleFAQ(index)}
                                     className="w-full flex items-center justify-between p-3 md:p-5 text-left hover:bg-gray-50 transition-colors"
                                 >
-                                    <span className="font-medium text-sm md:text-base text-[#1e3a5f] pr-2 md:pr-4">{faq.question}</span>
+                                    <span className="font-space font-bold text-sm md:text-base text-[#1e3a5f] pr-2 md:pr-4">{faq.question}</span>
                                     <span className="flex-shrink-0 text-gray-400">
                                         {openIndex === index ? (
                                             <Minus className="h-4 w-4 md:h-5 md:w-5" />
@@ -87,7 +87,7 @@ export function FAQSection() {
                                     className={`overflow-hidden transition-all duration-300 ${openIndex === index ? "max-h-96" : "max-h-0"
                                         }`}
                                 >
-                                    <p className="px-3 md:px-5 pb-3 md:pb-5 text-sm md:text-base text-gray-600 leading-relaxed">
+                                    <p className="px-3 md:px-5 pb-3 md:pb-5 text-sm md:text-base text-gray-600 leading-relaxed font-arimo">
                                         {faq.answer}
                                     </p>
                                 </div>
@@ -98,7 +98,7 @@ export function FAQSection() {
                     <div className="flex justify-center mt-6 md:mt-8 ">
                         <Link
                             href="/contact"
-                            className="inline-flex items-center justify-center gap-2 px-5 md:px-8 py-3 md:py-4 border border-primary rounded-full text-sm md:text-base font-medium hover:bg-primary transition-colors"
+                            className="inline-flex items-center justify-center gap-2 px-5 md:px-8 py-3 md:py-4 border border-primary rounded-full text-sm md:text-base font-space font-bold hover:bg-primary transition-colors"
                         >
                             <span>Book Free Consultation</span>
                             <ArrowRight className="h-4 w-4 flex-shrink-0" />

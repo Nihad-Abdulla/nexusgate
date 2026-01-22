@@ -3,6 +3,15 @@ import { HeroSection } from "@/components/hero-section";
 import MagneticLogoGrid from "@/components/magnetic-log";
 import { ServicesSection } from "@/components/service-section";
 import { TestimonialsSection } from "@/components/testimonial-section";
+import { AnimatedJourney } from "@/components/home/animated-journey";
+import { PartnerLogos } from "@/components/home/partner-logos";
+
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Business Setup in Dubai & UAE | NexusGate",
+  description: "Your gateway to business setup in Dubai. We specialize in Mainland & Free Zone company formation, Golden Visas, and Corporate Tax compliance.",
+};
 
 export default function Home() {
   return (
@@ -17,7 +26,7 @@ export default function Home() {
             <span className="font-space font-bold text-xs tracking-[0.2em] text-primary uppercase block mb-4">
               Welcome to NexusGate
             </span>
-            <h2 className="font-space text-4xl md:text-5xl font-bold text-[#0f2a44] mb-6 leading-tight">
+            <h2 className="font-space text-3xl md:text-5xl font-bold text-[#0f2a44] mb-6 leading-tight">
               Your Gateway to <br /> Business in Dubai.
             </h2>
             <p className="font-arimo text-gray-600 text-lg leading-relaxed mb-8">
@@ -32,7 +41,7 @@ export default function Home() {
           {/* Right: Image */}
           <div className="relative rounded-2xl overflow-hidden shadow-2xl">
             <img
-              src="https://images.unsplash.com/photo-1512453979798-5ea904ac66de?q=80&w=2070&auto=format&fit=crop"
+              src="/images/home-intro.jpg"
               alt="Dubai Business"
               className="w-full h-full object-cover aspect-video hover:scale-105 transition-transform duration-700"
             />
@@ -70,7 +79,7 @@ export default function Home() {
                 icon: "💎"
               }
             ].map((feature, i) => (
-              <div key={i} className="bg-white p-8 rounded-2xl hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+              <div key={i} className="bg-white p-8 rounded-2xl border border-gray-100">
                 <div className="text-4xl mb-6">{feature.icon}</div>
                 <h3 className="font-space text-xl font-bold text-[#0f2a44] mb-4">{feature.title}</h3>
                 <p className="font-arimo text-gray-600 leading-relaxed">{feature.desc}</p>
@@ -79,6 +88,44 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* NEW: Expertise & Impact (The "Second" Grid Section) */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
+            <div>
+              <span className="font-space font-bold text-xs tracking-[0.2em] text-primary uppercase block mb-4">
+                Our Expertise
+              </span>
+              <h2 className="font-space text-3xl md:text-5xl font-bold text-[#0f2a44] leading-tight">
+                Specialized Solutions <br /> for Global Ambition.
+              </h2>
+            </div>
+            <div>
+              <p className="font-arimo text-gray-600 text-lg leading-relaxed">
+                We don't just process papers; we build foundations. Our expertise spans across highly regulated industries, ensuring your business is compliant and competitive from day one.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { title: "Mainland Setup", value: "100%", detail: "Foreign Ownership" },
+              { title: "Freezone Hubs", value: "45+", detail: "Specialized Zones" },
+              { title: "Banking Success", value: "High", detail: "Approval Rate" },
+              { title: "PRO Support", value: "24/7", detail: "Concierge Service" }
+            ].map((stat, i) => (
+              <div key={i} className="bg-gray-50 border border-gray-100 p-8 rounded-2xl group hover:bg-[#0f2a44] transition-all duration-500">
+                <h4 className="font-space text-gray-500 text-sm uppercase tracking-widest mb-4 group-hover:text-primary transition-colors">{stat.title}</h4>
+                <div className="font-space text-4xl font-bold text-[#0f2a44] group-hover:text-white transition-colors mb-2">{stat.value}</div>
+                <div className="font-arimo text-gray-400 text-sm group-hover:text-gray-300 transition-colors">{stat.detail}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <AnimatedJourney />
 
       {/* NEW: Methodology Section */}
       <section className="py-24 bg-white">
@@ -162,15 +209,17 @@ export default function Home() {
             Join hundreds of successful companies who trusted NexusGate to build their foundation in Dubai.
           </p>
           <a
-            href="/consultation"
+            href="/contact"
             className="inline-block bg-primary hover:bg-[#2c8c91] text-white font-space font-bold py-4 px-10 rounded-full transition-all transform hover:-translate-y-1 hover:shadow-lg"
           >
             Start Your Journey
           </a>
         </div>
       </section>
-      <TestimonialsSection />
+      <PartnerLogos />
       <FAQSection />
+
+      <TestimonialsSection />
       <MagneticLogoGrid />
     </>
   );
