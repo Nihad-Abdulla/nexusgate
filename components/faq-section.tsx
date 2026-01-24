@@ -18,23 +18,19 @@ const faqs: FAQItem[] = [
     {
         question: "What are the steps involved in a Business setup in UAE?",
         answer:
-            "The key steps include: 1) Choosing your business activity and legal structure, 2) Selecting a trade name and getting initial approval, 3) Finding a local sponsor or service agent (for mainland), 4) Preparing legal documents and agreements, 5) Renting office space, 6) Submitting documents to DED, 7) Obtaining your trade license, and 8) Opening a corporate bank account.",
+            "The business setup process involves: 1) Choosing your business activity and legal structure, 2) Selecting a trade name and getting initial approval, 3) Preparing and submitting required documents, 4) Obtaining necessary approvals from relevant authorities, 5) Securing office space, 6) Receiving your trade license, and 7) Processing visa applications. We guide you through each step efficiently.",
     },
     {
         question: "What types of licenses are required for a Business setup in UAE?",
         answer:
-            "The main types of licenses in UAE are: Commercial License (for trading activities), Professional License (for services, professions, and craftsmen), Industrial License (for manufacturing activities), and Tourism License (for tourism-related businesses). The specific license depends on your business activity and jurisdiction.",
+            "There are three main types of licenses in UAE: 1) Commercial License - for trading activities, 2) Professional License - for service providers and professionals, and 3) Industrial License - for manufacturing and industrial activities. The type of license depends on your business activities. We help you identify and obtain the right license for your business.",
     },
     {
         question: "Why should I choose NexusGate over other consultants?",
         answer:
             "NexusGate stands out because we provide comprehensive end-to-end solutions combining legal expertise with strategic business advisory. Our direct relationships with government departments ensure faster processing, and our fixed-fee model means complete transparency without hidden costs.",
     },
-    {
-        question: "How long does it typically take to set up a business?",
-        answer:
-            "While it depends on the jurisdiction and license type, most free zone setups can be completed in 3-5 working days. Mainland setups typically take 5-10 working days. We specialize in expedited processing and can often significantly reduce these timelines through our optimized documentation workflow.",
-    },
+
     {
         question: "Do you provide support after the business is incorporated?",
         answer:

@@ -43,7 +43,7 @@ export default function Contact() {
         }
     ];
 
-    const mapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.17865241031!2d55.277!3d25.213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDEyJzQ2LjgiTiA1NcKwMTYnMzcuMiJF!5e0!3m2!1sen!2sae!4v1700000000000!5m2!1sen!2sae"; // Placeholder for DIFC
+    const mapUrl = "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3612.515301414429!2d55.37473987537924!3d25.1182637777619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDA3JzA1LjgiTiA1NcKwMjInMzguMyJF!5e0!3m2!1sen!2sin!4v1769256132089!5m2!1sen!2sin";
 
     return (
         <>
@@ -64,7 +64,7 @@ export default function Contact() {
                 contactInfo={sampleContactInfo}
                 socialLinks={socialLinks}
                 mapEmbedUrl={mapUrl}
-                directionsUrl="https://maps.app.goo.gl/xZFJdMhR3kQaAKX68"
+                directionsUrl="https://maps.app.goo.gl/RvzdCeFnrG4rNqaV7?g_st=ic"
             />
             <ContactForm />
         </>

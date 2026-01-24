@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
+import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react"
 
 const quickLinks = [
     { label: "About Us", href: "/about" },
@@ -28,15 +28,15 @@ export function Footer() {
                         <div>
                             <div className="flex items-center gap-3 mb-4">
                                 <Image
-                                    src="/LOGO FILES_SECONDARY LOGO-05.svg"
+                                    src="/logo-white.svg"
                                     alt="NexusGate Logo"
-                                    width={32}
-                                    height={32}
-                                    className="h-8 w-8 object-contain brightness-0 invert"
+                                    width={40}
+                                    height={40}
+                                    className="h-10 w-10 object-contain mt-2"
                                 />
                                 <div>
-                                    <h2 className="text-lg font-bold font-space">NexusGate</h2>
-                                    <p className="text-xs text-white/60 tracking-wider font-space">Consulting</p>
+                                    <h2 className="text-lg font-bold font-space leading-none">NexusGate</h2>
+                                    <p className="text-xs text-white/60 tracking-wider font-space leading-none mt-1">Consulting</p>
                                 </div>
                             </div>
                             <p className="text-white/70 text-sm leading-relaxed font-arimo">
@@ -102,11 +102,11 @@ export function Footer() {
                             </ul>
                             {/* Social Links */}
                             <div className="flex gap-4 mt-6">
-                                <a href="#" className="bg-white/20 p-2 rounded-full hover:bg-white/40 transition-colors">
-                                    <Facebook className="h-4 w-4" />
-                                </a>
-                                <a href="#" className="bg-white/20 p-2 rounded-full hover:bg-white/40 transition-colors">
-                                    <Twitter className="h-4 w-4" />
+
+                                <a href="https://x.com/Nexusgateuae" className="bg-white/20 p-2 rounded-full hover:bg-white/40 transition-colors">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
+                                        <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+                                    </svg>
                                 </a>
                                 <a href="https://www.instagram.com/nexusgate.ae?igsh=MTFwcnJuY2RuNHU5aQ==" target="_blank" rel="noopener noreferrer" className="bg-white/20 p-2 rounded-full hover:bg-white/40 transition-colors">
                                     <Instagram className="h-4 w-4" />

@@ -42,7 +42,8 @@ export const services: Service[] = [
             "Document clearing & notarization",
             "Regulatory compliance audits",
             "Trade license amendments & upgrades",
-            "Govt. department specific approvals"
+            "Govt. department specific approvals",
+            "Attestation services"
         ],
         process: [
             { step: "01", title: "Compliance Review", desc: "Auditing your current status and requirements." },
@@ -115,7 +116,7 @@ export const services: Service[] = [
         title: "Banking & Financial Support",
         shortDescription: "Strategic Banking Solutions",
         fullDescription: "We bridge the gap between your business and financial institutions, providing strategic support to streamline the corporate bank account opening process and ongoing banking needs. Our relationships with major UAE banks help you overcome institutional hurdles.",
-        image: "/images/service-banking-support.jpg",
+        image: "/images/service-banking.png",
         icon: "🏦",
         benefits: [
             "Corporate bank account opening assistance",
@@ -132,17 +133,18 @@ export const services: Service[] = [
     },
     {
         slug: "corporate-branding",
-        title: "Corporate Branding",
+        title: "Corporate  Branding",
         shortDescription: "Premium Visual Identity",
         fullDescription: "Beyond administration, we help establish your market presence through professional branding services that build a strong and recognizable identity for your new venture. We ensure your business is perceived with the authority and prestige it deserves.",
-        image: "/images/service-corporate-branding.jpg",
+        image: "/images/service-5.png",
         icon: "🎨",
         benefits: [
             "Bespoke logo & visual identity design",
             "Strategic market positioning",
             "Corporate stationery & collateral design",
             "Brand guideline development",
-            "Aesthetic alignment with UAE market standards"
+            "Aesthetic alignment with UAE market standards",
+            "Website design"
         ],
         process: [
             { step: "01", title: "Identity Discovery", desc: "Defining your vision, values, and market niche." },

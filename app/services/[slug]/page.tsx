@@ -105,11 +105,11 @@ export default async function ServicePage({ params }: PageProps) {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
                         {service.benefits.map((benefit, idx) => (
-                            <div key={idx} className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex items-start gap-4">
-                                <div className="bg-primaryp-2 rounded-full shrink-0">
+                            <div key={idx} className="bg-white p-4 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex items-center gap-4">
+                                <div className="bg-primary/10 p-2 rounded-full shrink-0">
                                     <CheckCircle2 className="w-5 h-5 text-primary" />
                                 </div>
-                                <span className="font-arimo text-gray-700 font-medium pt-1">
+                                <span className="font-arimo text-gray-700 font-medium text-sm">
                                     {benefit}
                                 </span>
                             </div>
