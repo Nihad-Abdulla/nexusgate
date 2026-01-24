@@ -219,7 +219,7 @@ export default function Home() {
       <PartnerLogos />
       <FAQSection />
 
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
       <MagneticLogoGrid />
     </>
   );
