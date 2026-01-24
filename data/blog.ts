@@ -25,7 +25,7 @@ export const blogs: Blog[] = [
         category: 'Corporate Advisory',
         publishedAt: 'Jan 15, 2024',
         readTime: '10 min read',
-        image: '/images/blog-business-structuring.jpg',
+        image: '/images/blog1.png',
         content: [
             {
                 type: 'paragraph',
@@ -69,7 +69,7 @@ export const blogs: Blog[] = [
         category: 'Global Mobility',
         publishedAt: 'Jan 18, 2024',
         readTime: '8 min read',
-        image: '/images/service-global-mobility.jpg',
+        image: '/images/blod2.png',
         content: [
             {
                 type: 'paragraph',
@@ -109,7 +109,7 @@ export const blogs: Blog[] = [
         category: 'Tax & Compliance',
         publishedAt: 'Jan 22, 2024',
         readTime: '12 min read',
-        image: '/images/blog-tax-compliance.jpg',
+        image: '/images/blog8.png',
         content: [
             {
                 type: 'paragraph',
@@ -149,7 +149,7 @@ export const blogs: Blog[] = [
         category: 'Banking Support',
         publishedAt: 'Jan 25, 2024',
         readTime: '7 min read',
-        image: '/images/service-banking-support.jpg',
+        image: '/images/blog4.png',
         content: [
             {
                 type: 'paragraph',
@@ -189,7 +189,7 @@ export const blogs: Blog[] = [
         category: 'Strategic Accounting',
         publishedAt: 'Jan 28, 2024',
         readTime: '9 min read',
-        image: '/images/service-financial-management.jpg',
+        image: '/images/blog5.png',
         content: [
             {
                 type: 'paragraph',
@@ -226,7 +226,7 @@ export const blogs: Blog[] = [
         category: 'Branding',
         publishedAt: 'Feb 02, 2024',
         readTime: '6 min read',
-        image: '/images/service-corporate-branding.jpg',
+        image: '/images/blog7.png',
         content: [
             {
                 type: 'paragraph',
@@ -262,7 +262,7 @@ export const blogs: Blog[] = [
         category: 'Wealth Advisory',
         publishedAt: 'Feb 10, 2024',
         readTime: '11 min read',
-        image: '/images/blog-wealth-hub.jpg',
+        image: '/images/blog9.png',
         content: [
             {
                 type: 'paragraph',
