@@ -42,7 +42,8 @@ export const services: Service[] = [
             "Document clearing & notarization",
             "Regulatory compliance audits",
             "Trade license amendments & upgrades",
-            "Govt. department specific approvals"
+            "Govt. department specific approvals",
+            "Attestation services"
         ],
         process: [
             { step: "01", title: "Compliance Review", desc: "Auditing your current status and requirements." },
@@ -142,7 +143,8 @@ export const services: Service[] = [
             "Strategic market positioning",
             "Corporate stationery & collateral design",
             "Brand guideline development",
-            "Aesthetic alignment with UAE market standards"
+            "Aesthetic alignment with UAE market standards",
+            "Website design"
         ],
         process: [
             { step: "01", title: "Identity Discovery", desc: "Defining your vision, values, and market niche." },
