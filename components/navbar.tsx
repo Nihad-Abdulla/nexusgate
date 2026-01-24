@@ -70,15 +70,15 @@ export function Navbar() {
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2 md:gap-3 group">
                         <Image
-                            src="/LOGO FILES_SECONDARY LOGO-05.svg"
+                            src="/logo-white.svg"
                             alt="NexusGate Logo"
                             width={40}
                             height={40}
-                            className="h-8 w-8 md:h-10 md:w-10 object-contain brightness-0 invert transition-transform group-hover:scale-110"
+                            className="h-8 w-8 md:h-12 md:w-12 mt-2 object-contain transition-transform group-hover:scale-110"
                         />
                         <div>
-                            <h1 className="text-base md:text-xl font-bold tracking-tight">NexusGate</h1>
-                            <p className="text-[10px] md:text-xs text-gray-300 tracking-widest uppercase opacity-80">Consulting</p>
+                            <h1 className="text-base md:text-xl font-bold tracking-tight leading-none">NexusGate</h1>
+                            <p className="text-[10px] md:text-xs text-gray-300 tracking-widest uppercase opacity-80 leading-none mt-1">Consulting</p>
                         </div>
                     </Link>
 

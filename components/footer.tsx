@@ -28,15 +28,15 @@ export function Footer() {
                         <div>
                             <div className="flex items-center gap-3 mb-4">
                                 <Image
-                                    src="/LOGO FILES_SECONDARY LOGO-05.svg"
+                                    src="/logo-white.svg"
                                     alt="NexusGate Logo"
-                                    width={32}
-                                    height={32}
-                                    className="h-8 w-8 object-contain brightness-0 invert"
+                                    width={40}
+                                    height={40}
+                                    className="h-10 w-10 object-contain mt-2"
                                 />
                                 <div>
-                                    <h2 className="text-lg font-bold font-space">NexusGate</h2>
-                                    <p className="text-xs text-white/60 tracking-wider font-space">Consulting</p>
+                                    <h2 className="text-lg font-bold font-space leading-none">NexusGate</h2>
+                                    <p className="text-xs text-white/60 tracking-wider font-space leading-none mt-1">Consulting</p>
                                 </div>
                             </div>
                             <p className="text-white/70 text-sm leading-relaxed font-arimo">
