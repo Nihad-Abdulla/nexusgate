@@ -27,7 +27,7 @@ export default function Home() {
               Welcome to NexusGate
             </span>
             <h2 className="font-space text-3xl md:text-5xl font-bold text-[#0f2a44] mb-6 leading-tight">
-              Your Gateway to <br /> Business in Dubai and Beyond.
+              Your Gateway to <br /> Business in Dubai <br /> and Beyond.
             </h2>
             <p className="font-arimo text-gray-600 text-lg leading-relaxed mb-8">
               Navigate the complexities of UAE business setup with confidence. We combine local expertise with global standards to deliver seamless corporate solutions across all seven Emirates.
