@@ -6,8 +6,8 @@ import { Toast } from '@/components/ui/simple-toast';
 const interests = [
     'Strategy',
     'Market Entry',
-    'Legal',
-    'Wealth Management',
+    'Tax & Compliance',
+    'Banking',
 ];
 
 export default function ContactForm() {
