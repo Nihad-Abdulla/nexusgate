@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   description: "Your trusted partner for business setup and corporate services in the UAE",
   keywords: ["Business Setup Dubai", "UAE Company Formation", "Golden Visa UAE", "Corporate Tax UAE", "PRO Services Dubai"],
   verification: {
-    google: "YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE",
+    google: "3XF6_HlOUxV5B_hmuOWlSSJh5TTna1Dqr3Bc7eDXCIA",
   },
   openGraph: {
     type: "website",
@@ -62,7 +62,7 @@ export default function RootLayout({
         <main className="min-h-screen">{children}</main>
         <WhatsappWidget />
         <Footer />
-        <GoogleAnalytics gaId="YOUR_GA_MEASUREMENT_ID" />
+        <GoogleAnalytics gaId="G-KGZPGK9B8P" />
       </body>
     </html>
   )
