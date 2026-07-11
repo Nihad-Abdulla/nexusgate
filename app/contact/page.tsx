@@ -43,7 +43,7 @@ export default function Contact() {
         }
     ];
 
-    const mapUrl = "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3612.515301414429!2d55.37473987537924!3d25.1182637777619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDA3JzA1LjgiTiA1NcKwMjInMzguMyJF!5e0!3m2!1sen!2sin!4v1769256132089!5m2!1sen!2sin";
+    const mapUrl = "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7283.872107976281!2d55.33206871415727!3d25.24478708334827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sAl%20Muhairebi%20Building%20Sheikh%20Rashid%20Rd%2C%20Al%20Garhoud%20Dubai%2C%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1783785975663!5m2!1sen!2sin";
 
     return (
         <>
@@ -59,8 +59,9 @@ export default function Contact() {
                 />
             </div>
             <ContactSection
-                locationTitle="A1 Building, Dubai Business Park"
-                locationSubtext="Silicon Oasis, Dubai"
+                locationTitle="Office 09, Al Muhairebi Building"
+                locationSubtext="Sheikh Rashid Rd, Al Garhoud
+Dubai, United Arab Emirates"
                 contactInfo={sampleContactInfo}
                 socialLinks={socialLinks}
                 mapEmbedUrl={mapUrl}
