@@ -79,7 +79,8 @@ export function Footer() {
                             <ul className="space-y-3">
                                 <li className="flex items-start gap-3 text-white/70 text-sm font-arimo">
                                     <MapPin className="h-5 w-5 text-white shrink-0 mt-0.5" />
-                                    <span>A1 Building, Dubai Business Park, Silicon Oasis, Dubai</span>
+                                    <span>Office 09, Al Muhairebi Building Sheikh Rashid Rd, Al Garhoud
+                                    Dubai, United Arab Emirates</span>
                                 </li>
                                 <li>
                                     <a

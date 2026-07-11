@@ -43,7 +43,7 @@ export default function Contact() {
         }
     ];
 
-    const mapUrl = "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7283.872107976281!2d55.33206871415727!3d25.24478708334827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sAl%20Muhairebi%20Building%20Sheikh%20Rashid%20Rd%2C%20Al%20Garhoud%20Dubai%2C%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1783785975663!5m2!1sen!2sin";
+    const mapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.7409839029096!2d55.3390621!3d25.245647599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d00252e4f03%3A0x27039368e3f588fc!2sNexusgate%20Consulting!5e0!3m2!1sen!2sin!4v1783796093324!5m2!1sen!2sin";
 
     return (
         <>
@@ -65,7 +65,7 @@ Dubai, United Arab Emirates"
                 contactInfo={sampleContactInfo}
                 socialLinks={socialLinks}
                 mapEmbedUrl={mapUrl}
-                directionsUrl="https://maps.app.goo.gl/RvzdCeFnrG4rNqaV7?g_st=ic"
+                directionsUrl="https://maps.app.goo.gl/8UqpEUXyxQMhZHrc8?g_st=ic"
             />
             <ContactForm />
         </>
