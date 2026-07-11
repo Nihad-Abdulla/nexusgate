@@ -60,7 +60,7 @@ export default function Contact() {
             </div>
             <ContactSection
                 locationTitle="Office 09, Al Muhairebi Building"
-                locationSubtext="Sheikh Rashid Rd, Al Garhoud
+                locationSubtext="Sheikh Rashid Rd, Al Garhoud,
 Dubai, United Arab Emirates"
                 contactInfo={sampleContactInfo}
                 socialLinks={socialLinks}

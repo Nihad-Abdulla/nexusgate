@@ -68,7 +68,7 @@ export function ContactSection({
                             {locationTitle}
                         </h2>
                         {locationSubtext && (
-                            <p className="text-gray-500 text-lg">
+                            <p className="text-gray-500 text-lg whitespace-pre-line">
                                 {locationSubtext}
                             </p>
                         )}
