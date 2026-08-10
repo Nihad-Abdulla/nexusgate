@@ -80,7 +80,7 @@ export function Footer() {
                                 <li className="flex items-start gap-3 text-white/70 text-sm font-arimo">
                                     <MapPin className="h-5 w-5 text-white shrink-0 mt-0.5" />
                                     <span>
-                                        Office 09, Al Muhairebi Building<br />
+                                        Office 09, UB Building<br />
                                         Sheikh Rashid Rd, Al Garhoud,<br />
                                         Dubai, United Arab Emirates
                                     </span>
